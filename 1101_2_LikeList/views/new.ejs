@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Like List</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/" class="header-logo">Like List</a>
+    </header>
+    <div class="container">
+      <div class="container-header">
+        <h1>欲しいものリスト作成</h1>
+      </div>
+      <div class="item-form-wrapper">
+        <p class="form-label">欲しいもの</p>
+        <form action="/create" method="post">
+          <input name="itemName" type="text" />
+          <input type="submit" value="作成する" />
+        </form>
+      </div>
+      <a href="/index" class="cancel-button">もどる</a>
+    </div>
+  </body>
+</html>

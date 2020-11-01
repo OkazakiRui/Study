@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+.header .item {
+  width: 20%;
+  height: 50%;
+  text-align: center;
+}
+
+.main {
+  background: #d1d1d1;
+}
+
+.main div {
+  height: 110vh;
+  text-align: center;
+  font-size: 50px;
+  line-height: 100vh;
+  font-weight: bold;
+}
+
+.main div:nth-child(2n) {
+  background: white;
+  color: black;
+}
+
+.main div:nth-child(2n+1) {
+  background: black;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
