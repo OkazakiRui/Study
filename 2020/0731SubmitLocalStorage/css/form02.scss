@@ -1,0 +1,93 @@
+@import "setting/variable";
+
+.header{
+  
+  ul{
+    display: flex;
+    border-bottom: 2px solid #64954f;
+  }
+
+  &-item{
+    display: flex;
+    margin-left: 10px;
+  }
+  li{
+    text-align: center;
+    line-height: 50px;  
+     
+    img{
+      height: 50px;
+      margin: auto 0 auto 14px;
+    }
+  }
+  a:link,a:visited{
+    color: #666;
+    width: 150px;
+    padding: 10px;
+    border-bottom: 5px #f9f9f9 solid;
+    text-decoration: none;
+  }
+
+  &-item:first-child{
+    margin-right: auto;
+    margin-left: 0;
+    cursor: pointer;
+  }
+
+  a:hover{
+    border-bottom: #64954f 5px solid;
+    transition: all 0.8s;
+    color: #000;
+    background: #f2f2f2;
+  }
+}
+
+table{
+  margin:30px auto;
+  
+  td{
+    padding: 3px;
+
+  }
+  th{
+    padding: 3px;
+    
+  }
+  
+  #btn,#btn2{
+    // background-color: tomato;
+    width: 100%;
+    height: 100%;
+    
+    &:hover{
+      background: skyblue;
+      
+    }
+  }
+}
+
+#tableOrignal{
+  td{
+    width: 600px;
+    padding: 3px;
+  
+  }
+  
+}
+
+
+
+// お名前   name1
+// フリガナ name2
+// 電話番号 phone1 phone2 phone3 上中下
+
+// メールアドレス   mail
+
+// 郵便番号 zip1 zip2 上下
+
+// 都道府県 address1
+
+// 住所    address2
+// お問い合わせ内容    question
+
+// 送信    btn
