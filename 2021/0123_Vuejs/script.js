@@ -19,11 +19,45 @@ new Vue({
     copyTextColor: "visibility:hidden",
     buttonclick: "click",
     HelloName: "名無し",
+    isActive: true,
+    color: "red",
+    bg: "bg-blue",
+    textColor: "#ddd",
+    bgColor: "#333",
+    textStyleObject: {
+      color: "#333",
+      "background-color": "#ddd",
+    },
+    baseStyleObject: {
+      "font-size": "24px",
+      fontWeight: "bold",
+    },
+    okData: true,
+    maybeOkData: true,
+    tempDOM: false,
+    showDOM: false,
+    fruits: ["りんご", "ばなな", "ぶどう"],
+    userObject: {
+      firstName: "岡崎",
+      lastName: "流依",
+      age: 18,
+    },
   },
   computed: {
     lessThanThreeComputed: function () {
       console.log("computed");
       return this.clickCount > 3 ? "3より上" : "3より下";
+    },
+    classObject: function () {
+      return { red: this.isActive, "bg-blue": !this.isActive };
+    },
+  },
+  watch: {
+    clickCount: function () {
+      var vm = this;
+      setTimeout(function () {
+        vm.clickCount = 0;
+      }, 1000);
     },
   },
   methods: {
