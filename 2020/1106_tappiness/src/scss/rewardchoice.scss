@@ -1,0 +1,35 @@
+@import "variables";
+.header::after {
+  content: "";
+  width: 12px;
+  height: 20px;
+  position: absolute;
+  background-image: url(../images/svg/header_rewardsetting.svg);
+  background-repeat: no-repeat;
+  left: 23px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.rewardItem {
+  display: grid;
+  grid-template-columns: 118px 118px 118px;
+  grid-template-rows: 138px 138px 138px;
+  gap: 26px 15px;
+  width: 384px;
+  margin: 15px auto;
+  &__wrap {
+    width: 118px;
+  }
+  &__img {
+    width: 100%;
+    height: 118px;
+  }
+  &__name {
+    margin-top: 2px;
+    font-size: 1.2em;
+    color: $gray2;
+    font-weight: bold;
+  }
+}

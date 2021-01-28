@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/ress.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/payment.css" />
+  <title>payment</title>
+</head>
+<html lang="ja">
+  <body>
+    <header><div class="header">支払い方法</div></header>
+    <main>
+      <div class="payment mar">
+        <p class="payment__date textal">
+          お届け予定日：<span class="payment__date__set">1月11日(月)</span>頃
+        </p>
+        <div class="payment__totalpoint flex">
+          <p class="payment__totalpoint__text">現在のポイント</p>
+          <p class="payment__totalpoint__point">100P</p>
+        </div>
+        <div class="payment__style">
+          <h2 class="payment__style__heading">お支払い方法</h2>
+
+          <div class="payment__style__right">
+            <select class="payment__style__select" name="paymentStyle">
+              <option value="">代金引換え</option>
+              <option value="">コンビニ支払い</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="payment__style">
+          <h2 class="payment__style__heading">ポイント利用</h2>
+          <div class="payment__style__usepoint flex">
+            <p class="payment__style__text">※100ポイントからご利用可能です。</p>
+            <div class="payment__style__input flex">
+              <input type="number" maxlength="5" value="0" name="usePoint" />P
+            </div>
+          </div>
+        </div>
+
+        <div class="payment__receipt">
+          <div class="payment__receipt__content flex" id="subtotal">
+            <p>小計</p>
+            <p>¥100</p>
+          </div>
+          <div class="payment__receipt__content flex" id="point">
+            <p>ポイント利用</p>
+            <p>¥0</p>
+          </div>
+          <div class="payment__receipt__content flex" id="delivery">
+            <p>送料</p>
+            <p>¥0</p>
+          </div>
+          <div class="payment__receipt__content flex" id="tax">
+            <p>消費税</p>
+            <p>¥10</p>
+          </div>
+        </div>
+        <div class="payment__total">
+          <div class="payment__total__wrap flex">
+            <p>合計</p>
+            <p>¥110</p>
+          </div>
+          <p>※現金のみ</p>
+        </div>
+      </div>
+      <div class="payment__btn">
+        <a href="#" class="btnOrange">確認画面へ</a>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer__objective footer__items">
+          <a href="reward.html" class="footer__btn">目標</a>
+        </div>
+        <div class="footer__timeline footer__items">
+          <a href="#" class="footer__btn">タイムライン</a>
+        </div>
+        <div class="footer__point footer__items">
+          <a href="point.html" class="footer__btn">ポイント</a>
+        </div>
+        <div class="footer__mypage footer__items">
+          <a href="mypage.html" class="footer__btn">マイページ</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

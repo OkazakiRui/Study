@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/ress.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/rewardchoice.css" />
+  <title>rewardchoice</title>
+</head>
+<html lang="ja">
+  <body>
+    <header><div class="header">ご褒美</div></header>
+    <main>
+      <div class="rewardItem mar" id="app">
+        <div class="rewardItem__wrap" v-for="item in items">
+          <div class="rewardItem__img itemWrap">
+            <img :src="item.itemImg" :alt="item.itemName" class="itemImg" />
+            <p class="price">{{item.itemPrice}}</p>
+          </div>
+          <p class="rewardItem__name textal">{{item.itemName}}</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/vue.js"></script>
+    <script src="js/rewardchoice.js"></script>
+    <!-- <script>
+      document.getElementById("submit").addEventListener("click", (e) => {
+        e.preventDefault();
+        location.href = "home.html";
+      });
+    </script> -->
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/ress.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/rewardsetting.css" />
+  <title>rewardsetting</title>
+</head>
+<html lang="ja">
+  <body>
+    <header><div class="header">目標設定</div></header>
+    <main>
+      <div class="rewardSetting">
+        <form action="">
+          <div class="rewardSetting__subject">
+            <h2 class="rewardSetting__heading">教科選択</h2>
+            <div class="selectWrap rewardSetting__select mar">
+              <select name="subject" class="select">
+                <option value="none" selected>教科を選択してください</option>
+                <option value="現代文">現代文</option>
+                <option value="古典">古典</option>
+                <option value="外国語">外国語</option>
+                <option value="世界史">世界史</option>
+                <option value="日本史">日本史</option>
+                <option value="地理">地理</option>
+                <option value="公民">公民</option>
+                <option value="数学">数学</option>
+                <option value="物理基礎">物理基礎</option>
+                <option value="化学基礎">化学基礎</option>
+                <option value="生物基礎">生物基礎</option>
+                <option value="地学基礎">地学基礎</option>
+              </select>
+            </div>
+          </div>
+          <div class="rewardSetting__setting">
+            <h2 class="rewardSetting__heading">目標選択</h2>
+            <div class="selectWrap rewardSetting__select mar">
+              <select name="bigGoal" class="select">
+                <option value="none">目標を選択してください</option>
+                <option value="0">テストで平均点以上取る</option>
+                <option value="1">一人で問題を解けるようになる</option>
+                <option value="2">毎日勉強する</option>
+                <option value="3">毎日復習する</option>
+                <option value="4">苦手な問題を解けるようになる</option>
+              </select>
+            </div>
+          </div>
+          <div class="rewardSetting__start">
+            <h2 class="rewardSetting__heading">期間設定(スタート)</h2>
+
+            <div class="selectWrap rewardSetting__select mar">
+              <input
+                type="date"
+                id="startDate"
+                name="startDate"
+                class="select"
+              />
+              <!-- min="2020-12-05" -->
+            </div>
+          </div>
+          <div class="rewardSetting__end">
+            <h2 class="rewardSetting__heading">期間設定(ゴール)</h2>
+            <div class="selectWrap rewardSetting__select mar">
+              <input
+                type="date"
+                id="goalDate"
+                name="goalDate"
+                class="select"
+                value=""
+              />
+            </div>
+          </div>
+          <button
+            type="submit"
+            id="submit"
+            class="rewardSetting__button btnOrange"
+          >
+            ご褒美選択
+          </button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer mar">
+        <div class="footer__objective footer__items">
+          <a href="reward.html" class="footer__btn">目標</a>
+        </div>
+        <div class="footer__timeline footer__items">
+          <a href="#" class="footer__btn">タイムライン</a>
+        </div>
+        <div class="footer__point footer__items">
+          <a href="point.html" class="footer__btn">ポイント</a>
+        </div>
+        <div class="footer__mypage footer__items">
+          <a href="mypage.html" class="footer__btn">マイページ</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/rewardsetting.js"></script>
+    <script>
+      document.getElementById("submit").addEventListener("click", (e) => {
+        e.preventDefault();
+        location.href = "rewardchoice.html";
+      });
+    </script>
+  </body>
+</html>

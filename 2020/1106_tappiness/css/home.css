@@ -1,0 +1,48 @@
+.header::after {
+  content: "";
+  width: 20.5px;
+  height: 26px;
+  position: absolute;
+  background-image: url(../images/svg/header_home.svg);
+  background-repeat: no-repeat;
+  right: 25px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.start {
+  width: 208px;
+  height: 250px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 10px;
+}
+
+.start__flag {
+  width: 39px;
+  height: 49px;
+  background-image: url(../images/svg/ico_flag.svg);
+  background-size: contain;
+  margin-bottom: 30px;
+}
+
+.start__text {
+  color: #707070;
+  font-size: 1.6em;
+  font-weight: normal;
+  line-height: 27px;
+  margin-bottom: 60px;
+}
+
+.footer__objective .footer__btn {
+  color: #ff9c4a;
+}
+
+.footer__objective .footer__btn::before {
+  background-color: #ff9c4a;
+}

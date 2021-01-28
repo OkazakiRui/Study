@@ -93,5 +93,8 @@ new Vue({
       console.log("methods");
       return this.clickCount > 3 ? "3より上" : "3より下";
     },
+    fruitsRemove: function () {
+      this.fruits.shift();
+    },
   },
 });

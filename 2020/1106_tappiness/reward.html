@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/ress.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/reward.css" />
+  <title>reward</title>
+</head>
+<html lang="ja">
+  <body>
+    <header><div class="header">目標</div></header>
+    <main>
+      <div class="biggoal">
+        <h1 class="biggoal__title textal">大きい目標</h1>
+        <div class="biggoal__text flex">
+          <div class="biggoal__text__subject"><p>数学</p></div>
+          <p>を</p>
+          <div class="biggoal__text__goal"><p>テストで平均点以上取る</p></div>
+        </div>
+      </div>
+      <div class="smallgoal textal">
+        <div class="smallgoal__text">
+          <p>
+            目標を達成する為に小さい目標を3つ用意しました。<br />
+            ※1~3を順に達成してボタンを押していこう！
+          </p>
+        </div>
+        <div class="smallgoal__contents flex">
+          <h2 class="smallgoal__contents__title">小さい目標1</h2>
+          <button class="smallgoal__contents__btn1 flex">
+            授業ノートを見ながら<br />問題を解く
+          </button>
+        </div>
+        <div class="smallgoal__contents flex">
+          <h2 class="smallgoal__contents__title">小さい目標2</h2>
+          <button class="smallgoal__contents__btn1 flex">
+            分からないところを<br />先生に聴く
+          </button>
+        </div>
+        <div class="smallgoal__contents flex">
+          <h2 class="smallgoal__contents__title">小さい目標3</h2>
+          <button class="smallgoal__contents__btn1 flex">
+            ノートを見ずに<br />問題を解く
+          </button>
+        </div>
+      </div>
+      <div class="other flex">
+        <div class="other__limit textal flex">
+          <p class="other__limit__text">達成期限日まであと</p>
+          <p class="other__limit__day">28日</p>
+        </div>
+        <div class="other__reward flex">
+          <p class="other__reward__text">ご褒美</p>
+          <div class="other__reward__item itemWrap">
+            <img
+              src="images/img0.jpg"
+              alt="お菓子の詰め合わせ"
+              class="itemImg"
+            />
+            <p class="other__reward__price price">¥100</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup hidden popup__smallgoal" id="smallgoal">
+        <div class="popup__inner">
+          <div class="popup__smallgoal__img">
+            <img src="" id="smallgoalImg" />
+          </div>
+          <div class="popup__smallgoal__text textal">
+            <p id="smallgoalText">目標1を達成！<br />あと1つがんばろう！</p>
+          </div>
+          <button class="popup__smallgoal__btn btnOrange" id="smallgoalBtn">
+            がんばる！
+          </button>
+        </div>
+        <div class="popup__background"></div>
+      </div>
+
+      <div class="popup hidden popup__limit" id="limit">
+        <div class="popup__inner">
+          <div class="popup__limit__text flex">
+            <p>ゴールにたどり着きましたか？<br />(目標)</p>
+          </div>
+          <div class="popup__limit__btns flex">
+            <button class="btnBlue popup__limit__btn">いいえ</button>
+            <button class="btnOrange popup__limit__btn">はい</button>
+          </div>
+        </div>
+        <div class="popup__background"></div>
+      </div>
+
+      <div class="popup hidden popup__finish" id="finish">
+        <div class="popup__inner">
+          <div class="popup__finish__img">
+            <img src="" alt="" />
+          </div>
+          <div class="popup__finish__complete textal">
+            <p>
+              おめでとうございます！<br />
+              <span class="popup__finish__complete__point">100P</span>
+              獲得しました。
+            </p>
+          </div>
+
+          <div class="popup__finish__fail textal">
+            <p>次は頑張ろう</p>
+          </div>
+
+          <a href="#" class="popup__finish__btn btnOrange">
+            <span class="popup__finish__btn__text">ご褒美を</span>
+            受け取る
+          </a>
+        </div>
+        <div class="popup__background"></div>
+      </div>
+
+      <div class="popup hidden popup__order" id="order">
+        <div class="popup__inner">
+          <div class="popup__order__content">
+            <button class="popup__order__btn"></button>
+            <p class="popup__order__text textal">注文を確定しました。</p>
+          </div>
+        </div>
+        <div class="popup__background"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer mar">
+        <div class="footer__objective footer__items">
+          <a href="reward.html" class="footer__btn">目標</a>
+        </div>
+        <div class="footer__timeline footer__items">
+          <a href="#" class="footer__btn">タイムライン</a>
+        </div>
+        <div class="footer__point footer__items">
+          <a href="point.html" class="footer__btn">ポイント</a>
+        </div>
+        <div class="footer__mypage footer__items">
+          <a href="mypage.html" class="footer__btn">マイページ</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/reward.js"></script>
+  </body>
+</html>

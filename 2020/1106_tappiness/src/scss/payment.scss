@@ -1,0 +1,124 @@
+@import "variables";
+.header::after {
+  content: "";
+  width: 12px;
+  height: 20px;
+  position: absolute;
+  background-image: url(../images/svg/header_rewardsetting.svg);
+  background-repeat: no-repeat;
+  left: 23px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+.footer__objective .footer__btn {
+  color: $orange1;
+  &::before {
+    background-color: $orange1;
+  }
+}
+
+.payment {
+  color: $gray1;
+  width: 384px;
+  &__date {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    &__set {
+      margin: 0 21px;
+    }
+  }
+
+  &__totalpoint {
+    width: 294px;
+    height: 42px;
+    border-radius: 7px;
+    border: 1px solid $gray1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 20px;
+    margin: 29px auto 0 auto;
+    &__text {
+      font-size: 1.3rem;
+    }
+    &__point {
+      font-size: 1.6rem;
+    }
+  }
+  &__style {
+    margin-top: 25px;
+    &__heading {
+      font-size: 1.3rem;
+      font-weight: normal;
+      &::after {
+        content: "";
+        display: block;
+        width: 100px;
+        margin-top: 2px;
+        margin-bottom: 1px;
+        border-bottom: 1px solid $gray1;
+      }
+    }
+    &__right {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+    }
+    &__select {
+      margin-top: 11px;
+      width: 120px;
+      height: 25px;
+      font-size: 1.3rem;
+      border: 1px solid $gray2;
+      background-image: url(../images/svg/ico_select.svg);
+      background-repeat: no-repeat;
+      background-size: 16px 8px;
+      background-position: right;
+      padding-left: 5px;
+    }
+    &__usepoint {
+      font-size: 1.6rem;
+      justify-content: space-between;
+    }
+    &__text {
+      font-size: 1rem;
+    }
+    &__input {
+      justify-content: right;
+      align-items: center;
+      margin-top: 8px;
+      margin-bottom: 30px;
+
+      input {
+        width: 61px;
+        height: 29px;
+        border: 1px solid $gray2;
+        margin-right: 10px;
+        text-align: right;
+        padding: 1px 9px;
+      }
+    }
+  }
+
+  &__receipt {
+    border-top: 1px solid $gray2;
+    border-bottom: 1px solid $gray2;
+    padding: 15px 0;
+    font-size: 1.3rem;
+    &__content {
+      justify-content: space-between;
+      margin: 10px 0px;
+    }
+  }
+  &__total {
+    margin-top: 18px;
+    &__wrap {
+      justify-content: space-between;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__btn {
+    margin-top: 12px;
+  }
+}

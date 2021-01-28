@@ -1,0 +1,60 @@
+@import "variables";
+
+body {
+  background-color: $blue1;
+}
+
+.login {
+  &__logo {
+    text-align: center;
+    margin-top: 141px;
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+    }
+    &::before {
+      top: -113px;
+      left: 17px;
+      width: 86px;
+      height: 695px;
+      background: url(../images/svg/login_left.svg);
+    }
+    &::after {
+      top: -55px;
+      right: 21px;
+      width: 59px;
+      height: 401px;
+      background: url(../images/svg/login_right.svg);
+    }
+  }
+  &__text {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.6em;
+    color: $blue3;
+  }
+  &__btn {
+    display: block;
+    width: 210px;
+    height: 62px;
+    border-radius: 7px;
+    font-size: 2em;
+    text-align: center;
+    line-height: 62px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+    &:first-of-type {
+      margin-bottom: 35px;
+      margin-top: 27%;
+      background-color: $blue2;
+      color: $white;
+    }
+    &:last-of-type {
+      border: 2px solid $blue2;
+      color: $blue2;
+    }
+  }
+}

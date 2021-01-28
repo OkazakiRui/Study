@@ -1,0 +1,191 @@
+.footer__mypage .footer__btn {
+  color: #ff9c4a;
+}
+
+.footer__mypage .footer__btn::before {
+  background-color: #ff9c4a;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 2px;
+}
+
+.mypage {
+  color: #707070;
+}
+
+.mypage .true {
+  color: #5699e6;
+}
+
+.mypage__profile {
+  width: 384px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px auto;
+}
+
+.mypage__profile__left {
+  align-items: center;
+}
+
+.mypage__profile__img {
+  background-color: #909090;
+  border-radius: 50%;
+  height: 51px;
+  width: 51px;
+}
+
+.mypage__profile__name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.mypage__profile__btn {
+  width: 150px;
+  height: 31px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  line-height: 31px;
+  background-color: #5699e6;
+  border-radius: 7px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.mypage__heading {
+  width: 100px;
+  font-weight: normal;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #5699e6;
+  margin: 15px 0;
+  color: #909090;
+}
+
+.mypage__status, .mypage__count {
+  width: 384px;
+  margin: 0 auto;
+}
+
+.mypage__status {
+  color: #5699e6;
+}
+
+.mypage__status__big {
+  background-color: #f4f8fd;
+  border: 1px solid #5699e6;
+  padding: 23px 0 34px 0;
+}
+
+.mypage__status__date {
+  font-size: 1.2rem;
+  margin: 3px 0;
+}
+
+.mypage__status__boolean {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #909090;
+}
+
+.mypage__status__min {
+  width: 33.3%;
+  border-left: 1px solid #5699e6;
+  border-right: 1px solid #5699e6;
+  border-bottom: 1px solid #5699e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.mypage__status__min:nth-child(2) {
+  border-left: none;
+  border-right: none;
+}
+
+.mypage__count__total {
+  text-align: right;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.mypage__count__total span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.mypage__log {
+  width: 384px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.mypage__log__wrap {
+  height: 78px;
+  overflow: scroll;
+  border: 1px solid #707070;
+}
+
+.mypage__log__content {
+  width: 368px;
+  display: flex;
+  border-bottom: 1px solid #707070;
+  margin: 0 auto;
+  padding: 3px 0;
+}
+
+.mypage__log__goal {
+  margin-left: 46px;
+}
+
+.mypage__setting {
+  font-size: 1.5rem;
+  margin-bottom: 60px;
+}
+
+.mypage__setting h2 {
+  margin-left: 15px;
+}
+
+.mypage__setting__wrap {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #707070;
+  position: relative;
+}
+
+.mypage__setting__wrap:nth-of-type(2) {
+  border-top: none;
+  border-bottom: none;
+}
+
+.mypage__setting__wrap::after {
+  content: "";
+  display: block;
+  width: 23px;
+  height: 23px;
+  background-image: url(../images/svg/mypage_setting.svg);
+  position: absolute;
+  right: 15px;
+  top: 14px;
+}
+
+.mypage__setting__btn {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.mypage__logout {
+  margin-bottom: 60px;
+}

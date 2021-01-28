@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/ress.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/addressee.css" />
+  <title>addressee</title>
+</head>
+<html lang="ja">
+  <body>
+    <header><div class="header">お届け先</div></header>
+    <main>
+      <div class="addressee mar">
+        <form action="">
+          <div class="addressee__wrap">
+            <p class="addressee__text">名前</p>
+            <input
+              type="text"
+              name="fullName"
+              class="addressee__input"
+              autocomplete="name"
+            />
+          </div>
+
+          <div class="addressee__wrap">
+            <p class="addressee__text">ふりがな</p>
+            <input type="text" name="hiraName" class="addressee__input" />
+          </div>
+
+          <div class="addressee__wrap">
+            <p class="addressee__text">郵便番号</p>
+            <input
+              type="text"
+              name="zipcode"
+              class="addressee__input"
+              autocomplete="postal-code"
+            />
+          </div>
+
+          <div class="addressee__wrap">
+            <p class="addressee__text">住所</p>
+            <input
+              type="text"
+              name="address"
+              class="addressee__input"
+              class="select"
+            />
+          </div>
+
+          <div class="addressee__wrap">
+            <p class="addressee__text">電話番号</p>
+            <input
+              type="text"
+              name="phone"
+              class="addressee__input"
+              autocomplete="tel-area-code"
+            />
+          </div>
+
+          <div class="addressee__submit">
+            <input type="submit" value="支払い方法へ" class="btnOrange" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer__objective footer__items">
+          <a href="reward.html" class="footer__btn">目標</a>
+        </div>
+        <div class="footer__timeline footer__items">
+          <a href="#" class="footer__btn">タイムライン</a>
+        </div>
+        <div class="footer__point footer__items">
+          <a href="point.html" class="footer__btn">ポイント</a>
+        </div>
+        <div class="footer__mypage footer__items">
+          <a href="mypage.html" class="footer__btn">マイページ</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+.footer__objective .footer__btn {
+  color: #ff9c4a;
+}
+
+.footer__objective .footer__btn::before {
+  background-color: #ff9c4a;
+}
+
+.addressee {
+  width: 295px;
+  margin-top: 15px;
+}
+
+.addressee__wrap {
+  width: 100%;
+  color: #5699e6;
+  font-size: 1.3em;
+  height: 58px;
+  margin-bottom: 39px;
+}
+
+.addressee__text {
+  text-indent: 8px;
+  margin-bottom: 8px;
+}
+
+.addressee__input {
+  width: 100%;
+  height: 31px;
+  border: #909090 1px solid;
+  border-radius: 7px;
+  background-image: url(../images/svg/signup_textborder.svg);
+  background-size: 1px 18px;
+  background-position: 10px center;
+  padding: 9px 17px;
+}
+
+.addressee__submit {
+  margin-top: 43px;
+  font-weight: bold;
+}

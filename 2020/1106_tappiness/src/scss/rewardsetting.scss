@@ -1,0 +1,39 @@
+@import "variables";
+.header::after {
+  content: "";
+  width: 12px;
+  height: 20px;
+  position: absolute;
+  background-image: url(../images/svg/header_rewardsetting.svg);
+  background-repeat: no-repeat;
+  left: 23px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.rewardSetting {
+  color: $gray1;
+  margin: 30px 0 30px 35px;
+  margin-left: 30px;
+  margin-right: 30px;
+  &__heading {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 14px;
+  }
+
+  &__select {
+    margin-bottom: 38px;
+  }
+
+  &__button {
+    margin-top: 60px;
+  }
+}
+.footer__objective .footer__btn {
+  color: $orange1;
+  &::before {
+    background-color: $orange1;
+  }
+}

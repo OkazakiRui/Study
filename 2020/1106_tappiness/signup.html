@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/ress.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/signup.css" />
+  <title>signup</title>
+</head>
+<html lang="ja">
+  <body>
+    <header><div class="header">新規登録</div></header>
+    <main>
+      <label for="fileInput">
+        <img
+          src="images/svg/signup_profile.svg"
+          alt="プロフィールのサンプル画像"
+          class="signup__fileInput mar"
+        />
+      </label>
+      <form
+        action="https://click.ecc.ac.jp/ecc/smiki/tappiness/php/userRegister.php"
+        method="POST"
+      >
+        <div class="signup mar">
+          <input type="file" id="fileInput" hidden />
+
+          <div class="signup__wrap">
+            <p class="signup__text">メールアドレス</p>
+            <input
+              type="text"
+              class="signup__input"
+              name="mail"
+              placeholder="sample-tarou@gmail.com"
+            />
+          </div>
+
+          <div class="signup__wrap">
+            <p class="signup__text">ユーザーネーム</p>
+            <input
+              type="text"
+              name="name"
+              class="signup__input"
+              placeholder="サンプル太郎"
+            />
+          </div>
+
+          <div class="signup__wrap">
+            <p class="signup__text">パスワード</p>
+            <input
+              type="password"
+              name="password"
+              class="signup__input"
+              placeholder="sample1234"
+            />
+          </div>
+
+          <div class="signup__wrap">
+            <p class="signup__text">パスワード(確認)</p>
+            <input
+              type="password"
+              class="signup__input"
+              placeholder="sample1234"
+            />
+          </div>
+          <div class="signup__submit">
+            <input type="submit" value="登録する" class="btnOrange" />
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

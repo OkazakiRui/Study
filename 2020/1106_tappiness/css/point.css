@@ -1,0 +1,115 @@
+.header::after {
+  content: "";
+  width: 12px;
+  height: 20px;
+  position: absolute;
+  background-image: url(../images/svg/header_rewardsetting.svg);
+  background-repeat: no-repeat;
+  left: 23px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.footer__point .footer__btn {
+  color: #ff9c4a;
+}
+
+.footer__point .footer__btn::before {
+  background-color: #ff9c4a;
+}
+
+.point {
+  color: #707070;
+}
+
+.point__totalWrap {
+  width: 384px;
+  height: 121px;
+  padding: 14px 0 14px 22px;
+  margin: 15px auto;
+  border: 2px solid #5699e6;
+  border-radius: 7px;
+  justify-content: space-between;
+}
+
+.point__totalWrap__name {
+  font-size: 1.5rem;
+}
+
+.point__totalWrap__img {
+  margin: 7px 17px;
+}
+
+.point__totalWrap__right {
+  align-items: center;
+  padding-right: 33px;
+  position: relative;
+}
+
+.point__totalWrap__point {
+  font-size: 2.5rem;
+  color: #ff9c4a;
+  font-weight: bold;
+}
+
+.point__totalWrap__text {
+  position: absolute;
+  color: #5699e6;
+  left: 41px;
+  top: 60px;
+  font-size: 1rem;
+}
+
+.point__history__heading {
+  width: 100px;
+  font-size: 1.5rem;
+  font-weight: normal;
+  border-bottom: 1px solid #5699e6;
+  margin-left: 15px;
+}
+
+.point__history__btn {
+  width: 50%;
+  height: 50px;
+  color: #5699e6;
+  font-size: 1.5rem;
+  border-top: 1px solid #cee1f4;
+  border-bottom: 1px solid #cee1f4;
+  margin-top: 15px;
+}
+
+.point__history .change {
+  background-color: #cee1f4;
+  position: relative;
+}
+
+.point__history .change::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -1px;
+  transform: translateX(-50%);
+  border-top: 10px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 10px solid white;
+  border-left: 6px solid transparent;
+}
+
+.point__history__content {
+  margin: 5px auto;
+  width: 384px;
+}
+
+.point__history__log {
+  padding: 18px 0;
+  border-top: 1px solid #5699e6;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+.point__history__log .logPoint {
+  color: #5699e6;
+}

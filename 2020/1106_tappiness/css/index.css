@@ -1,0 +1,61 @@
+body {
+  background-color: #f4f8fd;
+}
+
+.login__logo {
+  text-align: center;
+  margin-top: 141px;
+  position: relative;
+}
+
+.login__logo::before, .login__logo::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.login__logo::before {
+  top: -113px;
+  left: 17px;
+  width: 86px;
+  height: 695px;
+  background: url(../images/svg/login_left.svg);
+}
+
+.login__logo::after {
+  top: -55px;
+  right: 21px;
+  width: 59px;
+  height: 401px;
+  background: url(../images/svg/login_right.svg);
+}
+
+.login__text {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 1.6em;
+  color: #116ea8;
+}
+
+.login__btn {
+  display: block;
+  width: 210px;
+  height: 62px;
+  border-radius: 7px;
+  font-size: 2em;
+  text-align: center;
+  line-height: 62px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.login__btn:first-of-type {
+  margin-bottom: 35px;
+  margin-top: 27%;
+  background-color: #5699e6;
+  color: white;
+}
+
+.login__btn:last-of-type {
+  border: 2px solid #5699e6;
+  color: #5699e6;
+}

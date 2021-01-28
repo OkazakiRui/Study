@@ -116,6 +116,23 @@
           <hr>
         </template>
       </ul>
+      <ul>
+        <li v-for="n in 3">{{n}}</li>
+        <li v-for="n of 3">{{n}}</li>
+      </ul>
+      <ul>
+        <div v-for="fruit in fruits">
+          <p>{{fruit}}</p>
+          <input type="text">
+        </div>
+        <hr>
+        <div v-for="fruit in fruits" :key="fruit">
+          <p>{{fruit}}</p>
+          <input type="text">
+        </div>
+      </ul>
+
+      <button @click="fruitsRemove">先頭を削除する</button>
     </div>
     <script src="script.js"></script>
   </body>

@@ -1,0 +1,250 @@
+.header::after {
+  content: "";
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  background-image: url(../images/svg/header_reward.svg);
+  background-repeat: no-repeat;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.biggoal {
+  border-bottom: #707070 1px solid;
+}
+
+.biggoal__title {
+  font-weight: normal;
+  font-size: 1.2em;
+  color: #707070;
+  margin: 13px 0;
+}
+
+.biggoal__text {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 21px;
+}
+
+.biggoal__text > p {
+  display: inline-block;
+  font-size: 1.8em;
+  color: #707070;
+}
+
+.biggoal__text__subject, .biggoal__text__goal {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 7px;
+  border: 1px solid #707070;
+  color: #ff9c4a;
+  font-weight: bold;
+  font-size: 1.8em;
+  margin: 0 16px;
+}
+
+.smallgoal {
+  border-bottom: #707070 1px solid;
+  padding-bottom: 4px;
+}
+
+.smallgoal__text {
+  font-size: 1.2em;
+  line-height: 17px;
+  color: #bebebe;
+  margin: 14px;
+}
+
+.smallgoal__contents {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.smallgoal__contents__title {
+  font-weight: normal;
+  font-size: 1.2em;
+  color: #707070;
+  margin-bottom: 8px;
+}
+
+.smallgoal__contents__btn1, .smallgoal__contents__btn2 {
+  font-size: 1.6em;
+  line-height: 20px;
+  width: 214px;
+  height: 58px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+}
+
+.smallgoal__contents__btn1 {
+  border: 1px solid #5699e6;
+  color: #5699e6;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.smallgoal__contents__btn2 {
+  background-color: #5699e6;
+  color: white;
+}
+
+.other {
+  width: 384px;
+  height: 80px;
+  color: #707070;
+  justify-content: space-between;
+  margin: 22px auto 27px auto;
+}
+
+.other__limit {
+  width: 192px;
+  height: 80px;
+  border: 1px solid #707070;
+  border-radius: 7px;
+  padding: 12px 0;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.other__limit__text {
+  font-size: 1.2em;
+}
+
+.other__limit__day {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.other__reward {
+  width: 149px;
+  height: 80px;
+  border: 1px solid #707070;
+  border-radius: 7px;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 7px;
+}
+
+.other__reward__text {
+  font-size: 1.2em;
+}
+
+.other__reward__item {
+  width: 63.46px;
+  height: 63.46px;
+}
+
+.other__reward__price {
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  right: -51%;
+  bottom: -51%;
+  padding-right: 10px;
+  padding-bottom: 4px;
+}
+
+.footer__objective .footer__btn {
+  color: #ff9c4a;
+}
+
+.footer__objective .footer__btn::before {
+  background-color: #ff9c4a;
+}
+
+.popup__smallgoal__img {
+  width: 274px;
+  height: 137px;
+  background-color: #bebebe;
+  margin: 65px auto 50px auto;
+}
+
+.popup__smallgoal__text {
+  font-size: 1.3em;
+  line-height: 19px;
+  color: #707070;
+  margin-bottom: 38px;
+}
+
+.popup__limit__text {
+  margin-top: 120px;
+  margin-bottom: 72px;
+  justify-content: center;
+  font-size: 1.3em;
+  line-height: 19px;
+  color: #707070;
+}
+
+.popup__limit__btns {
+  width: 324px;
+  margin: 0 auto;
+}
+
+.popup__limit__btn {
+  width: 126px;
+}
+
+.popup__finish__img {
+  width: 255px;
+  height: 255px;
+  background-color: #bebebe;
+  margin: 30px auto 10px auto;
+}
+
+.popup__finish__complete {
+  margin-bottom: 15px;
+}
+
+.popup__finish__complete p {
+  font-size: 1.3em;
+  line-height: 19px;
+  color: #707070;
+}
+
+.popup__finish__complete p > span {
+  font-size: 18px;
+  display: block;
+  margin: 4px 0;
+  line-height: 22px;
+}
+
+.popup__finish__fail {
+  display: none;
+  font-size: 1.3em;
+  margin: 28px 0;
+}
+
+.popup__finish__btn {
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.popup__finish__btn__text {
+  display: block;
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: normal;
+}
+
+.popup__order__content {
+  width: 100%;
+  height: 100%;
+  padding: 22px 20px;
+  font-size: 2rem;
+}
+
+.popup__order__btn {
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/svg/ico_close.svg);
+  margin-bottom: 169px;
+}

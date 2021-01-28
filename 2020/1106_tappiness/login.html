@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/ress.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <title>login</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="login">
+        <h1 class="login__logo mar">
+          <img src="images/logo@2x.png" alt="logo" />
+        </h1>
+
+        <form
+          action="https://click.ecc.ac.jp/ecc/smiki/tappiness/php/login.php"
+          method="POST"
+        >
+          <div class="login__wrap mar">
+            <p class="login__text">メールアドレス</p>
+            <input type="text" name="mail" class="login__input" />
+          </div>
+          <div class="login__wrap mar">
+            <p class="login__text">パスワード</p>
+            <input type="password" name="password" class="login__input" />
+          </div>
+
+          <button type="submit" id="submit" class="login__submit btnBlue">
+            ログインする
+          </button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
