@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="ecc,ECC,ecc comp.,...">
+    <meta name="description" content="オンラインでビデオ通話パーティーを楽しむSpark">
+    <meta name="twitter:card" content="summary">
+    <!-- <meta name="twitter:site" content="@twitteraccount"> -->
+    <meta property="og:site_name" content="Spark">
+    <meta property="og:title" content="Spark">
+    <meta property="og:description" content="オンラインパーティーに参加しよう">
+    <meta property="og:url" content="https://raika.link/spark/page_index/">
+    <meta property="og:image" content="../img/logo_square.png">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="400">
+    <meta property="og:type" content="website">
+    <!-- <link rel="canonical" hreflang="http://">
+    <link rel="alternate" type="" title="" href="http://"> スマホとPCで分ける時-->
+    <link rel="shortcut icon" href="../img/favicon.ico" image/vnd.microsoft.icon">
+    <link rel="apple-touch-icon" href="../img/logo_square.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav">
+            <h1><a href="../page_index/"><img src="img/logo.png" alt="Spark"></a></h1>
+            <!-- <p class="startBtn"><a href="">Sparkを作成する</a></p> -->
+        </div>
+    </header>
+    <main class="main">
+
+        <h2 class="title">Sparkを作成する</h2>
+        <div class="selectWrap">
+            <div class="select">
+                <p class="select__title">時間制限</p>
+                <select id="select_time" name="time">
+                    <option value="none">無制限</option>
+                    <option value="30">30分</option>
+                    <option value="60">1時間</option>
+                    <option value="90">1時間30分</option>
+                    <option value="120">2時間</option>
+                </select>
+            </div>
+            <div class="select">
+                <p class="select__title">お助けトークテーマ</p>
+                <select id="select_talktheme" name="talktheme">
+                    <option value="none">無し</option>
+                    <option value="first">初対面</option>
+                    <option value="friend">友達</option>
+                    <option value="student">学生</option>
+                    <option value="adult">社会人</option>
+                    <option value="drink">飲み会</option>
+                    <option value="talk">雑談</option>
+                    <option value="mygod">推しを語る</option>
+                </select>
+            </div>
+        </div>
+        <div class="createBtn">
+            <a href="../page_room/?talktheme=none&time=none" id="toSpark">作成</a>
+        </div>
+    </main>
+    <footer class="footer">
+        <ul>
+            <li><a href="">利用規約</a></li>
+            <li><a href="">プライバシーポリシー</a></li>
+            <li><a href="">ヘルプ</a></li>
+            <li><a href="">お問い合わせ</a></li>
+            <li><a href="">運営会社</a></li>
+        </ul>
+        <p><small>© 2020 ばななじゅーちゅ</small></p>
+    </footer>
+    <script src="../page_room/js/jquery-3.3.1.min.js"></script>
+    <script src="js/start.js"></script>
+</body>
+
+</html>

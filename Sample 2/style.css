@@ -1,0 +1,13 @@
+#test {
+  width: 400px;
+  height: 400px;
+  background-color: red;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#test:hover {
+  background-color: green;
+  opacity: 0;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="keywords" content="ecc,ECC,ecc comp.,...">
+  <meta name="description" content="オンラインでビデオ通話パーティーを楽しむSpark">
+  <meta name="twitter:card" content="summary">
+  <!-- <meta name="twitter:site" content="@twitteraccount"> -->
+  <meta property="og:site_name" content="Spark">
+  <meta property="og:title" content="Spark">
+  <meta property="og:description" content="オンラインパーティーに参加しよう">
+  <meta property="og:url" content="https://www.hogehoge.com">
+  <meta property="og:image" content="img/logo_square.png">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="400">
+  <meta property="og:type" content="website">
+  <!-- <link rel="canonical" hreflang="http://">
+  <link rel="alternate" type="" title="" href="http://"> スマホとPCで分ける時-->
+  <script src="https://cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
+  <link rel="shortcut icon" href="img/favicon.ico" image/vnd.microsoft.icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" href="img/logo_square.png">
+  <link rel="stylesheet" href="css/spark.css">
+  <title>Spark</title>
+</head>
+
+<body>
+  <div id="container" class="container flex">
+    <div id="pre_leftbox" class="pre_leftbox">
+      <h1><img src="img/logo.png" alt="spark"></h1>
+      <h2>Sparkを開始する</h2>
+      <div class="pre_namebox flex">
+        <div class="pre_namebox_title">名前</div>
+        <input id="sparkname" class="pre_namebox_text" type="text" placeholder="名前を入力してください">
+      </div>
+      <div class="pre_share_title">
+        <div>このリンクを共有して友達を招待しよう</div>
+      </div>
+      <div class="pre_urlcopy_box flex">
+        <div class="urlcopy_url" id="room_url"></div>
+        <img class="urlcopy_icon" src="img/copy_icon.png" alt="copy">
+      </div>
+      <a class="pre_linecopy_box flex" target="_blank" rel="noopener"
+        href="https://social-plugins.line.me/lineit/share?url=http://localhost/http://localhost/Poltfolio/">
+        <img src="img/line_icon.png" alt="LINEで共有">
+        <div>LINE</div>
+      </a>
+      <button id="js-join-trigger" class="pre_start">開始</button>
+      <!-- <button id="js-leave-trigger" class="pre_leave">Leave</button> -->
+    </div>
+    <div id="roomBox" class="pre_rightbox flex">
+      <div id="local-stream-box" class="my-vido-box">
+        <video id="js-local-stream" class="my-video"></video>
+      </div>
+    </div>
+  </div>
+
+  <!-- エフェクトbox start -->
+  <div id="effectBox" class="effectBox">
+    <div id="gifBox">
+      <!-- こんな感じで追加される -->
+      <!-- <img src="" alt="エフェクト" class="gif">
+          <img src="" alt="エフェクト" class="gif">
+          <img src="" alt="エフェクト" class="gif">
+          <img src="" alt="エフェクト" class="gif">
+          <img src="" alt="エフェクト" class="gif"> -->
+    </div>
+  </div>
+  <!-- エフェクトbox end -->
+
+  <!-- 操作バー start -->
+  <div id="spark_fixBox" class="spark_fixBox">
+    <div class="spark_flex1">
+      <img src="img/spark_subjectbox.png" alt="トークテーマ">
+      <p class="spark_talktheme" id="spark_talktheme">ウミガメのステーキ</p>
+    </div>
+    <div class="spark_flex2">
+      <img src="img/spark_video.png" alt="ビデオオンオフ" id="videoBtn">
+      <img src="img/spark_mute.png" alt="ミュートオンオフ" id="audioBtn">
+      <button id="js-leave-trigger" class="pre_leave"><img src="img/spark_leave.png" alt="leave"
+          id="js-leave-trigger"></button>
+    </div>
+    <div class="spark_flex3">
+      <img src="img/spark_reaction.png" alt="リアクション" id="spark_reaction">
+      <img src="img/spark_link.png" alt="共有リンク" id="spark_linkBtn">
+      <img src="img/spark_setting.png" alt="設定">
+      <!-- <img src="img/spark_finish.png" alt="終了"> -->
+    </div>
+  </div>
+  <!-- 操作バー end -->
+
+  <!-- 通話画面の共有リンク  start-->
+  <div class="spark_link" id="spark_link">
+    <div class="spark_link_box">
+      <div class="spark_share_title">
+        <div>リンクを共有して友達を招待しよう</div>
+      </div>
+      <div class="spark_urlcopy_box flex">
+        <div class="urlcopy_url" id="room_url"></div>
+        <img class="urlcopy_icon" src="img/copy_icon.png" alt="copy">
+      </div>
+      <a class="spark_linecopy_box flex" target="_blank" rel="noopener"
+        href="https://social-plugins.line.me/lineit/share?url=http://localhost/http://localhost/Poltfolio/">
+        <img src="img/line_icon.png" alt="LINEで共有">
+        <div>LINE</div>
+      </a>
+    </div>
+    <img src="img/spark_linkbox.png" alt="リンク共有" class="spark_link_imgBox">
+  </div>
+  <!-- 通話画面の共有リンク  end-->
+
+  <!-- 通話画面のスタンプ一覧 start -->
+  <div class="spark_stamp" id="spark_stamp">
+    <div class="spark_stampbox_relative">
+      <div class="spark_stampbox_absolute">
+        <img src="stamp_thumbImg/stamp_1.png" alt="声聞こえてますか" class="stamp">
+        <img src="stamp_thumbImg/stamp_2.png" alt="ミュート中" class="stamp">
+        <img src="stamp_thumbImg/stamp_3.png" alt="離席中" class="stamp">
+        <img src="stamp_thumbImg/stamp_4.png" alt="ねむたい" class="stamp">
+        <img src="stamp_thumbImg/stamp_5.png" alt="なんでやねん" class="stamp">
+        <img src="stamp_thumbImg/stamp_6.png" alt="バグった" class="stamp">
+        <img src="stamp_thumbImg/stamp_7.png" alt="は?!" class="stamp">
+        <img src="stamp_thumbImg/stamp_8.png" alt="たんま" class="stamp">
+        <img src="stamp_thumbImg/stamp_9.png" alt="親きた" class="stamp">
+        <img src="stamp_thumbImg/stamp_10.png" alt="オーマイガー" class="stamp">
+        <img src="stamp_thumbImg/stamp_11.png" alt="ただいま全力で準備中" class="stamp">
+        <img src="stamp_thumbImg/stamp_12.png" alt="ぱんぱかぱーん" class="stamp">
+        <img src="stamp_thumbImg/stamp_13.png" alt="面白い" class="stamp">
+        <img src="stamp_thumbImg/stamp_14.png" alt="うんち" class="stamp">
+        <img src="stamp_thumbImg/stamp_15.png" alt="梅美人" class="stamp">
+        <img src="stamp_thumbImg/stamp_16.png" alt="0点" class="stamp">
+        <img src="stamp_thumbImg/stamp_17.png" alt="100点" class="stamp">
+        <img src="stamp_thumbImg/stamp_17.png" alt="100点" class="stamp hiddenstamp">
+      </div>
+    </div>
+    <img src="img/spark_stampbox.png" alt="スタンプ一覧" class="spark_stampImg">
+  </div>
+  <!-- 通話画面のスタンプ一覧 end -->
+
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/key.js"></script>
+  <script src="js/effect.js"></script>
+  <script src="js/spark.js"></script>
+
+</body>
+
+</html>

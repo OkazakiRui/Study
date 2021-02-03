@@ -1,0 +1,44 @@
+@keyframes whiteout {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.whiteout_ani {
+    display: block;
+    background-color: white;
+    animation-name: whiteout;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+
+    img {
+        opacity: 1;
+    }
+}
+
+@keyframes jumpbird {
+    0% {
+        bottom: -30%;
+    }
+
+    50% {
+        bottom: 60%;
+    }
+
+    100% {
+        bottom: -30%;
+    }
+}
+
+.jumpbird_ani {
+    animation-name: jumpbird;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}

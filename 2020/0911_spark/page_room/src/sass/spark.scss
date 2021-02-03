@@ -1,0 +1,418 @@
+@import '_ress.scss';
+@import '_animation.scss';
+
+.flex {
+    display: flex;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+
+    .container {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        display: flex;
+        width: 1100px;
+        height: 700px;
+        margin: auto auto 100px auto;
+        justify-content: center;
+        align-items: center;
+        margin: auto auto;
+
+
+        .pre_leftbox {
+            display: none;
+            display: block;
+            width: 400px;
+            height: 700px;
+
+            h1 {
+                font-size: 2rem;
+
+                img {
+                    width: 250px;
+                }
+            }
+
+            h2 {
+                font-size: 1.7rem;
+                margin-top: 70px;
+            }
+
+            .pre_namebox {
+                width: 400px;
+                font-size: 1rem;
+                margin-top: 50px;
+                display: flex;
+                align-items: center;
+
+
+                .pre_namebox_title {
+                    width: 60px;
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+
+                .pre_namebox_text {
+                    width: 350px;
+                    height: 60px;
+                    font-size: 1rem;
+                    border: 1px solid #ccc;
+                    border-radius: 15px;
+                    padding: 5px;
+                }
+            }
+
+            .pre_share_title {
+                margin-top: 50px;
+                font-size: 0.8rem;
+                overflow: hidden;
+            }
+
+            .pre_urlcopy_box {
+                width: 100%;
+                height: 60px;
+                border: 1px solid #ccc;
+                border-radius: 15px;
+                padding: 5px;
+                cursor: pointer;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 10px;
+
+                .urlcopy_url {
+                    color: #ACACAC;
+                    overflow: hidden;
+                    font-size: 1rem;
+                    // line-height: 48px;
+                }
+
+                .urlcopy_icon {
+                    width: 20px;
+                    height: 23px;
+                    margin: auto 10px;
+                }
+            }
+
+            .pre_linecopy_box {
+                width: 100px;
+                height: 60px;
+                border: 1px solid #ccc;
+                border-radius: 15px;
+                padding: 5px 10px;
+                cursor: pointer;
+                align-items: center;
+                margin-top: 20px;
+                text-decoration: none;
+                color: black;
+
+                img {
+                    width: 23px;
+                    height: 23px;
+                }
+
+                div {
+                    font-size: 1rem;
+                    font-weight: bold;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .pre_rightbox {
+            width: 640px;
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 60px;
+            flex-wrap: wrap;
+            // flex-direction: row-reverse;
+
+            .my-vido-box {
+                // transform: scale(1, 0.75);
+                // height: 45vh;
+                position: relative;
+                padding: 2px;
+                order: 10;
+
+                .my-video {
+                    position: relative;
+                    width: 600px; //会議は100%
+                    height: auto;
+                    border-radius: 20px;
+                    margin: none;
+                }
+
+                p {
+                    display: block;
+                    position: absolute;
+                }
+            }
+
+        }
+
+        .pre_start {
+            width: 220px;
+            height: 45px;
+            background-color: #FDAB29;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            line-height: 45px;
+            border-radius: 20px;
+            margin-top: 50px;
+            color: white;
+        }
+
+        .pre_leave {
+            background-color: brown;
+            visibility: hidden;
+        }
+
+        // .spark_roomBox {
+        //     width: 100vw;
+        //     height: 90vh;
+
+        //     video {
+        //         width: 49.5vw;
+        //         height: auto;
+        //         border-radius: 0;
+        //     }
+        // }
+    }
+
+    //  <!-- エフェクトbox start -->
+    .effectBox {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2000;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 100px;
+        overflow: hidden;
+
+        .gifBox {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                transform: translate(-50%, -50%);
+                width: 300px;
+                height: auto;
+            }
+        }
+    }
+
+    //  <!-- エフェクトbox end -->
+
+
+    // <!-- 操作バー start -->
+    .spark_fixBox {
+        display: flex;
+        bottom: 0;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        z-index: 3000; //一番手前
+        background-color: #FDFDFD;
+        visibility: hidden;
+
+        .spark_flex1 {
+            position: relative;
+            margin-left: 40px;
+
+            p {
+                position: absolute;
+                display: block;
+                top: 42%;
+                left: 215px;
+                transform: translate(-50%, -50%);
+                font-size: 1rem;
+                font-weight: bold;
+            }
+
+            img {
+                position: relative;
+                width: 100%;
+            }
+        }
+
+        .spark_flex2 {
+            margin-right: 30px;
+
+            img {
+                width: 55px;
+                margin: auto 20px;
+                cursor: pointer;
+            }
+        }
+
+        .spark_flex3 {
+            display: flex;
+            margin-right: 40px;
+            justify-content: center;
+
+            img {
+                height: 90px;
+                width: auto;
+                margin: auto 10px;
+                cursor: pointer;
+                padding: 10px;
+            }
+
+            &:nth-child(1) {
+                height: 70px;
+            }
+        }
+    }
+
+    // <!-- 操作バー end -->
+
+    //<!-- 通話画面の共有リンク  start-->
+    .spark_link {
+        position: fixed;
+        bottom: 110px;
+        right: 60px;
+        visibility: hidden;
+        // background-color: yellow;
+
+        .spark_link_box {
+            position: relative;
+            margin-left: 25px;
+            z-index: 1002;
+
+            .spark_share_title {
+                position: absolute;
+                top: 20px;
+                font-size: 0.8rem;
+                overflow: hidden;
+            }
+
+            .spark_urlcopy_box {
+                position: absolute;
+                width: 350px;
+                height: 70px;
+                border: 1px solid #ccc;
+                border-radius: 15px;
+                padding: 5px;
+                cursor: pointer;
+                justify-content: space-between;
+                align-items: center;
+                top: 50px;
+                background-color: white;
+                font-size: 1rem;
+                line-height: 1.4rem;
+
+                .urlcopy_url {
+                    color: #ACACAC;
+                    overflow: hidden;
+                    font-size: 1rem;
+                    // line-height: 48px;
+                }
+
+                .urlcopy_icon {
+                    width: 20px;
+                    height: 23px;
+                    margin: auto 10px;
+                }
+            }
+
+            .spark_linecopy_box {
+                position: absolute;
+                width: 100px;
+                height: 60px;
+                border: 1px solid #ccc;
+                border-radius: 15px;
+                padding: 5px 10px;
+                cursor: pointer;
+                align-items: center;
+                top: 130px;
+                text-decoration: none;
+                color: black;
+                background-color: white;
+
+                img {
+                    width: 23px;
+                    height: 23px;
+                }
+
+                div {
+                    font-size: 1rem;
+                    font-weight: bold;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .spark_link_imgBox {
+            width: 400px;
+            height: 220px;
+            position: relative;
+            z-index: 1001;
+        }
+    }
+
+    //<!-- 通話画面の共有リンク  end-->
+
+    //<!-- 通話画面のスタンプ一覧 start -->
+    .spark_stamp {
+        visibility: hidden;
+        position: fixed;
+        bottom: 110px;
+        right: 105px;
+
+        .spark_stampbox_relative {
+            width: 630px;
+            height: 270px;
+            position: absolute;
+            z-index: 2201;
+            margin: 15px 0 0 10px;
+
+            .spark_stampbox_absolute {
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                .stamp {
+                    position: relative;
+                    width: 92px; //paddingで10減る
+                    height: 73px; //paddingで10減る
+                    padding: 5px 5px;
+                    cursor: pointer;
+                }
+
+                .hiddenstamp {
+                    visibility: hidden;
+                }
+            }
+        }
+
+        .spark_stampImg {
+            position: relative;
+            z-index: 2200;
+        }
+    }
+
+    //<!-- 通話画面のスタンプ一覧 end -->
+
+}
