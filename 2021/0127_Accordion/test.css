@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: YuMincho, sans-serif;
+}
+
+/* .test {
+  display: flex;
+}
+
+input {
+  display: none;
+}
+
+.opentext {
+  display: flex;
+}
+
+.check:checked + .openAnser + .opentext {
+  background: black;
+} */
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+  font-size: 20px;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    height: 30px;
+  }
+}
+
+.que,
+.ans {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+
+.que,
+.ans,
+.hide {
+  margin: 40px auto;
+  width: 800px;
+}
+
+.ans {
+  animation: open 2s;
+}
+
+.hide {
+  display: none;
+}
+
+/* .btnWrap {
+  width: 200px;
+  height: 50px;
+  margin: 40px auto;
+}
+
+.hoverBtn {
+  display: block;
+  width: 200px;
+  height: 50px;
+  color: white;
+  border: 2px solid #333;
+  background-color: #666;
+  transition: all 2s;
+  position: relative;
+}
+
+.hoverBtn:hover {
+  background-color: #fff;
+  border: 2px solid #eee;
+  color: black;
+}
+
+@keyframes opa {
+  0% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+span {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: -100px;
+  transition: all 2s;
+  background-color: green;
+  display: none;
+}
+
+.hoverBtn:hover span {
+  animation: opa 2s;
+} */
