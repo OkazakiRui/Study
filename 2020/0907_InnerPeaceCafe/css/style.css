@@ -86,13 +86,13 @@
   margin: 0 auto;
   font-size: 16px;
   min-width: 1278px;
-  font-family: 筑紫A丸ゴシック, 'Noto Sans JP', sans-serif;
+  font-family: 筑紫A丸ゴシック, "Noto Sans JP", sans-serif;
   opacity: 0;
 }
 
 .en {
   font-family: "Pacifico", cursive;
-  color: #7ABF85;
+  color: #7abf85;
 }
 
 .heading {
@@ -150,7 +150,7 @@
 }
 
 .text {
-  color: #4B4B4B;
+  color: #4b4b4b;
   line-height: 28px;
 }
 
@@ -214,7 +214,7 @@ html {
 }
 
 .header_right ul .reservation {
-  background: #7ABF85;
+  background: #7abf85;
   width: 140px;
   height: 35px;
   text-align: center;
@@ -225,7 +225,7 @@ html {
 .mainvisual {
   width: 100%;
   height: 100vh;
-  background-image: url(../images/mainvisual.png);
+  background-image: url(../images/mainvisual.jpg);
   background-position: center right;
   background-size: cover;
   position: relative;
@@ -244,7 +244,7 @@ html {
 
 .main .story {
   height: 770px;
-  background-image: url(../images/paper_back.png);
+  background-image: url(../images/paper_back.jpg);
   background-size: cover;
   font-weight: 400;
   padding: 70px;
@@ -252,7 +252,6 @@ html {
 
 .main .story_whats {
   width: 242px;
-  margin: 0 auto;
   margin: 0 auto 70px auto;
   position: relative;
 }
@@ -261,11 +260,11 @@ html {
   content: "";
   display: block;
   position: absolute;
-  background: url(../images/SVG/salad.svg);
   width: 173px;
   height: 153px;
   top: 100px;
   left: 360px;
+  background-image: url(../images/salad.png);
   background-repeat: no-repeat;
 }
 
@@ -284,7 +283,7 @@ html {
 }
 
 .main .story_text::before {
-  background: url(../images/SVG/grape.svg);
+  background-image: url(../images/grape.png);
   width: 132px;
   height: 142px;
   top: 140px;
@@ -292,7 +291,7 @@ html {
 }
 
 .main .story_text::after {
-  background: url(../images/SVG/juice.svg);
+  background-image: url(../images/juice.png);
   width: 419px;
   height: 143px;
   top: 200px;
@@ -373,15 +372,15 @@ html {
 }
 
 .main .commitment .contents_photo1 {
-  background-image: url(../images/commit1.png);
+  background-image: url(../images/commit1.jpg);
 }
 
 .main .commitment .contents_photo2 {
-  background-image: url(../images/commit2.png);
+  background-image: url(../images/commit2.jpg);
 }
 
 .main .commitment .contents_photo3 {
-  background-image: url(../images/commit3.png);
+  background-image: url(../images/commit3.jpg);
 }
 
 .main .commitment .contents1::before {
@@ -568,7 +567,7 @@ html {
 .main .review {
   height: 530px;
   width: 100%;
-  background: url(../images/review_back.png);
+  background: url(../images/review_back.jpg);
   background-size: cover;
   background-position: center;
   padding: 40px;
@@ -753,7 +752,7 @@ html {
 
 .main .access_content_maps_google {
   display: block;
-  border: 1px solid #4B4B4B;
+  border: 1px solid #4b4b4b;
   border-radius: 16px;
   width: 372px;
   height: 262px;
@@ -767,10 +766,10 @@ html {
   width: 255px;
   height: 34px;
   border-radius: 20px;
-  background: #7ABF85;
+  background: #7abf85;
   border: white 1px solid;
-  -webkit-box-shadow: 3px 3px #7ABF85;
-          box-shadow: 3px 3px #7ABF85;
+  -webkit-box-shadow: 3px 3px #7abf85;
+          box-shadow: 3px 3px #7abf85;
   color: white;
 }
 
@@ -810,7 +809,7 @@ html {
 }
 
 .main .access_content_contact p {
-  color: #4B4B4B;
+  color: #4b4b4b;
   display: inline-block;
   line-height: 28px;
 }
@@ -843,20 +842,20 @@ html {
 }
 
 .main .contactform {
-  background: url(../images/paper_back.png);
+  background: url(../images/paper_back.jpg);
   background-size: cover;
   padding: 40px 0 80px 0;
 }
 
 .main .contactform p {
   letter-spacing: 2px;
-  color: #4B4B4B;
+  color: #4b4b4b;
 }
 
 .main .contactform input,
 .main .contactform textarea {
   background: white;
-  border: #4B4B4B 1px solid;
+  border: #4b4b4b 1px solid;
   width: 100%;
   border-radius: 6px;
 }
@@ -895,10 +894,10 @@ html {
   width: 90%;
   height: 39px;
   border-radius: 20px;
-  background: #7ABF85;
+  background: #7abf85;
   border: white 1px solid;
-  -webkit-box-shadow: 3px 3px #7ABF85;
-          box-shadow: 3px 3px #7ABF85;
+  -webkit-box-shadow: 3px 3px #7abf85;
+          box-shadow: 3px 3px #7abf85;
   color: white;
   line-height: 39px;
   display: block;
@@ -919,7 +918,7 @@ html {
 .footer {
   height: 210px;
   width: 100%;
-  background-color: #4B4B4B;
+  background-color: #4b4b4b;
 }
 
 .footer_contents {

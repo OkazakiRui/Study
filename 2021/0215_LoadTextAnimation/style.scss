@@ -1,0 +1,63 @@
+@keyframes textAnimation_bar {
+  0% {
+    left: 0;
+    width: 0;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  51% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0;
+  }
+}
+@keyframes textAnimation_txt {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* css */
+.textAnimation .textAnimation_box {
+  display: block;
+  text-align: center;
+}
+.textAnimation .textAnimation_bar {
+  position: relative;
+  display: inline_block;
+  transform: translate3d(0, 0, 0);
+}
+.textAnimation .textAnimation_bar:before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  /* 任意の値 */
+  background: #000;
+}
+.textAnimation .textAnimation_txt {
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+  /* 任意の値 */
+}
+.textAnimation.move .textAnimation_bar:before {
+  animation: textAnimation_bar 1s ease 0s 1 normal forwards;
+}
+.textAnimation.move .textAnimation_txt {
+  animation: textAnimation_txt 0s ease 0.5s 1 normal forwards;
+}
