@@ -15,7 +15,7 @@
           <img :src="item.image" :alt="item.title" />
         </figure>
         <h4>{{ item.title }}</h4>
-        <p class="itemText">{{ item.description }}</p>
+        <p class="itemText">{{ sliceBytes(item.description) }}</p>
       </a>
     </div>
   </div>
@@ -61,6 +61,30 @@ export default {
     // items(val) {
 
     // },
+  },
+  methods: {
+    sliceBytes(description) {
+      // console.log(description);
+      if (description) {
+        let description_array = description.split('');
+        let count = 0;
+        let str = '';
+        for (let i = 0; i < description_array.length; i++) {
+          let n = escape(description_array[i]);
+          if (n.length < 4) {
+            count++;
+          } else {
+            count += 2;
+          }
+          if (count > 400) {
+            return str + '...';
+          }
+          str += description.charAt(i);
+        }
+        return description;
+      }
+      return '';
+    },
   },
 };
 </script>
