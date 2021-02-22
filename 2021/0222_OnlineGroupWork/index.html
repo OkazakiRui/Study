@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/ress.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>team.OBAKE</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <div id="app">
+      <main>
+        <div class="firstView">
+          <div class="firstView__title"></div>
+          <p class="firstView__title__text">
+            ここはお化けが住むマンション、３人のお化けに貴方は巡り合えるか・・・
+          </p>
+
+          <button class="topButton">TOP</button>
+        </div>
+        <div class="profiles">
+          <h2 class="profiles__title">おばけがこっちを<br />見ているよ！</h2>
+
+          <div class="profile" v-for="(profile,index) in profiles" :key="index">
+            <figure class="profile__photo">
+              <img :src="profile.photo" :alt="profile.name+'の写真'" />
+            </figure>
+            <div class="profile__textWrap">
+              <p class="profile__text">名前：<span>{{profile.name}}</span></p>
+              <p class="profile__text">学校：<span>{{profile.school}}</span></p>
+              <p class="profile__text">
+                誕生日：<span>{{profile.birthday}}</span>
+              </p>
+              <p class="profile__text">
+                好きな色：<span>{{profile.likeColor}}</span>
+              </p>
+              <p class="profile__text">
+                マイブーム：<span>{{profile.myBoom}}</span>
+              </p>
+              <p class="profile__text">
+                本番に向けてひとこと：<br /><span>{{profile.message}}</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+html {
+  font-size: 62.5%;
+  background-color: #8367c7;
+  color: #ffffff;
+}
+
+main {
+  max-width: 428px;
+  min-width: 375px;
+}
+
+.firstView {
+  height: 650px;
+  background-color: #3e3a39;
+  position: relative;
+  background-position: 0 60px;
+  background-image: url(../images/firstBg.png);
+  background-size: cover;
+  color: #f7f7f7;
+}
+
+.firstView__text {
+  position: absolute;
+}
+
+.firstView__title {
+  width: 310px;
+  height: 42px;
+  background-image: url(../images/title.png);
+  position: absolute;
+  top: 113px;
+  left: 33px;
+}
+
+.firstView__title__text {
+  font-size: 1rem;
+  position: absolute;
+  right: 6px;
+  top: 150px;
+  font-weight: 100;
+}
+
+.firstView::before, .firstView::after {
+  content: '';
+  display: block;
+  width: 100%;
+  position: absolute;
+}
+
+.firstView::before {
+  height: 112px;
+  background-image: url(../images/firstTop.png);
+  background-size: 427px 160px;
+  background-position: 0 -25px;
+}
+
+.firstView::after {
+  height: 226px;
+  width: 100%;
+  background-image: url(../images/firstBottom.png);
+  background-size: 446px 226px;
+  background-position: -21px 0;
+  top: 544px;
+}
+
+.topButton {
+  background-color: #bca7f0;
+  position: fixed;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  right: 12px;
+  bottom: 9px;
+  background-image: url(../images/top.svg);
+  background-position: center 8px;
+  padding-top: 34px;
+  z-index: 10000;
+}
+
+.profiles {
+  background-color: #8367c7;
+  margin-top: 200px;
+}
+
+.profiles__title {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 100;
+  padding-top: 52px;
+}
+
+.profile {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 52px;
+  font-weight: 100;
+}
+
+.profile__photo {
+  width: 100%;
+  height: 241px;
+}
+
+.profile__photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profile__text {
+  color: #ffcd2a;
+}
+
+.profile__text span {
+  color: #ffffff;
+}
+
+.profile__textWrap {
+  font-size: 2rem;
+  margin: 23px 0;
+}
+/*# sourceMappingURL=style.css.map */
